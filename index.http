@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <title>Game</title>
+</head>
+<body>
+    <main>
+     <div class="content-center">
+         <div class="container-left">
+        <div class="title">
+            <h1>Find a pair</h1>
+            <p>Find all paired pictures to win the game</p>
+        </div>
+        <div class="container">
+        <p>Choose a game size</p>
+ 
+        </div>
+    </div>
+    <div class="container-right">
+        <div class="pairs">
+            <label for="pairs">Choose a size:</label>
+            <select name="pairs" id="pairs" placeholder="Choose a size" >
+              <option value="0"></option>
+              <option value="4">4 pairs</option>
+              <option value="6">6 pairs</option>
+              <option value="8">8 pairs</option>
+              <option value="10">10 pairs</option>
+              <option value="12">12 pairs</option>
+              <option value="14">14 pairs</option>
+              <option value="16">16 pairs</option>
+              <option value="18">18 pairs</option>
+              <option value="20">20 pairs</option>
+            </select>
+        </div>
+
+    </div>
+     </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
