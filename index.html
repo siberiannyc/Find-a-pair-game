@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,6 +22,10 @@
             <h1>Find a pair</h1>
             <p>Find all paired pictures to win the game</p>
         </div>
+        <div class="moves">
+            <h2 class="moves">Moves Made:</h2>
+            <h2 id="movenumber">0</h2>
+        </div>
         <div class="container">
         <p>Choose a game size</p>
  
@@ -43,10 +47,35 @@
               <option value="20">20 pairs</option>
             </select>
         </div>
+        <button class="reset">
+            <i class='text-slide'>Start Over</i>
+            <i class="fas fa-sync-alt icon-slide"></i>
+        </button>
 
     </div>
      </div>
+     <div class="modul">
+        <!-- <div class="modul"> -->
+            <div class="submodul">
+         <div class="congrats">
+         <h1>YOU WON!</h1>
+         <h2>CONGRATULATIONS!</h2>
+        </div>
+        <div class="score-announce">
+            <h1>Your Score is: <span class="score-digits">00</span> points</h1>
+            <h1>You made it for: <span class="count-digits">00</span> turns</h1>
+        </div>
+        <div class="bttns-restart">
+            <button class="restart">Play Again</button>
+        </div>
+     </div>
+     <button class="closemodul">
+        X
+    </button>
+    </div>
     </main>
     <script src="app.js"></script>
+
+    
 </body>
 </html>
