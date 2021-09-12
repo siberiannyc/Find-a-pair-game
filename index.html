@@ -10,29 +10,25 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
         <link href='https://css.gg/css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
         <title>Game</title>
     </head>
+
     <body>
         <main>
-            <div class="content-center">
-                <div class="container-left">
-                <div class="title">
-                    <h1>Find a pair</h1>
-                    <p>Find all paired pictures to win the game</p>
-                </div>
-                <div class="wrapper">
-                    <h1 class='test'>Your time</h1>
-                    <p><span id="seconds">00</span>:<span id="tens">00</span></p>
-                </div> 
-                <div class="container">
-                    <p>Choose a game size</p>
-                </div>
+            <div class="title">
+                <h1 class="title__header">FIND A PAIR</h1>
             </div>
-            <div class="container-right">
+            <div class="container__stat">
                 <div class="pairs">
-                    <label for="pairs">Choose a size:</label>
-                    <select name="pairs" id="pairs" placeholder="Choose a size" >
-                        <option value="0"></option>
+                    <label for="pairs"></label>
+                    <select name="pairs" id="pairs" >
+                        <option value="" disabled selected>Choose size</option>
                         <option value="4">4 pairs</option>
                         <option value="6">6 pairs</option>
                         <option value="8">8 pairs</option>
@@ -44,31 +40,53 @@
                         <option value="20">20 pairs</option>  
                     </select>
                 </div>
+                    <div class="wrapper">
+                        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+                    </div> 
                 <button class="reset">
                     <i class='text-slide'>Start Over</i>
-                    <i class="fas fa-sync-alt icon-slide"></i>
                 </button>
             </div>
+            <div class="content-center">
+                <div class="container__game">
+                    <div class="container">
+                        <p>Choose a game size </p>
+                        <span>
+                            <img src="./Media/dm4uz3-foekoe.gif" alt="zzz" id="zzz">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
             </div>
             <div class="modul">
                 <div class="submodul">
-                    <div class="congrats">
-                        <h1>YOU WON!</h1>
-                        <h2>CONGRATULATIONS!</h2>
+                    <div class="popper__container">
+                       <img src="./Media/pngaaa.com-1321846.png" alt="party popper">
                     </div>
-                <div class="score-announce">
-                    <h1>You made it for: <span class="score-digits">00</span> seconds</h1>
-                    <h1>You made it for: <span class="count-digits">00</span> turns</h1>
+                    <div class="party__container">
+                        <img src="./Media/Party Face Emoji.png" alt="party face">
+                    </div>
+                    <div class="submodul__container">
+                        <div class="res-cards">
+                            <div class="res-card res-card__turns">
+                                <h1 class="digits"><span class="digits__span count-digits">00</span><span class="res__span">turns</span></h1>
+                            </div>
+                            <div class="res-card res-card__time">
+                                <h1 class="digits"><span class="digits__span score-digits">00:00</span><span class="res__span">seconds</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bttns-restart">
+                        <button class="restart">Play Again</button>
+                    </div>
                 </div>
-                <div class="bttns-restart">
-                    <button class="restart">Play Again</button>
-                </div>
+                <button class="closemodul">
+                    X
+                </button>
             </div>
-            <button class="closemodul">
-                X
-            </button>
-        </div>
         </main>
+    
         <script src="app.js"></script> 
     </body>
 </html>
