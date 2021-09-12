@@ -1,4 +1,4 @@
-/* Default Settings */
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -318,7 +318,7 @@ main{
     align-items: center;
     background-color: rgba(0,0,0,0.1);
     color: white;
-    font-size:6rem;
+    font-size:5rem;
     cursor:pointer;
 }
 
